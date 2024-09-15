@@ -1,4 +1,414 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context=".ForecastFragment"
+    tools:ignore="Extra Test">
+
+    <!-- Layout đầu tiên (USTH Weather + Refresh + Settings) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1c2caf"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="273dp"
+            android:layout_height="41dp"
+            android:paddingLeft="8px"
+            android:paddingRight="8px"
+            android:textSize="25sp"
+            android:text="USTH Weather"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8px"
+            android:layout_marginRight="8px"
+            android:src="@drawable/refresh" />
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8px"
+            android:layout_marginRight="8px"
+            android:src="@drawable/settings" />
+    </LinearLayout>
+
+    <!-- Layout thứ hai (Thứ + Icon thời tiết + Mô tả và nhiệt độ) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#ADD8E6">
+
+        <!-- Thứ 2 (TextView) -->
+        <TextView
+            android:id="@+id/monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Monday"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- Icon thời tiết (ImageView) -->
+
+        <!-- LinearLayout chứa tình trạng thời tiết và nhiệt độ -->
+        <ImageView
+            android:id="@+id/ic_partlycloudy"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Weather Icon"
+            android:src="@drawable/partly_cloudy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tình trạng thời tiết (TextView) -->
+            <TextView
+                android:id="@+id/partlycloudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Partly Cloudy"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Nhiệt độ (TextView) -->
+            <TextView
+                android:id="@+id/mondaytemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24°C-32°C"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#ADD8E6">
+
+        <!-- Thứ 3(TextView) -->
+        <TextView
+            android:id="@+id/tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Tuesday"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- Icon thời tiết (ImageView) -->
+
+        <!-- LinearLayout chứa tình trạng thời tiết và nhiệt độ -->
+        <ImageView
+            android:id="@+id/ic_heaveyrain"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Weather Icon"
+            android:src="@drawable/heavy_rain" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tình trạng thời tiết (TextView) -->
+            <TextView
+                android:id="@+id/heavyrain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heavy Rain"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Nhiệt độ (TextView) -->
+            <TextView
+                android:id="@+id/tuesdaytemprature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22°C-29°C"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#ADD8E6">
+
+        <!-- Thứ 4 (TextView) -->
+        <TextView
+            android:id="@+id/wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Wednesday"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- Icon thời tiết (ImageView) -->
+
+        <!-- LinearLayout chứa tình trạng thời tiết và nhiệt độ -->
+        <ImageView
+            android:id="@+id/ic_rain"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Weather Icon"
+            android:src="@drawable/heavy_rain" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tình trạng thời tiết (TextView) -->
+            <TextView
+                android:id="@+id/rain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rain"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Nhiệt độ (TextView) -->
+            <TextView
+                android:id="@+id/wednesdaytemprature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22°C-29°C"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#ADD8E6">
+
+        <!-- Thứ 5(TextView) -->
+        <TextView
+            android:id="@+id/thursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Thursday"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- Icon thời tiết (ImageView) -->
+
+        <!-- LinearLayout chứa tình trạng thời tiết và nhiệt độ -->
+        <ImageView
+            android:id="@+id/ic_scattered_day"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Weather Icon"
+            android:src="@drawable/scattered_showers" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tình trạng thời tiết (TextView) -->
+            <TextView
+                android:id="@+id/scatteredshowers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scattered Showers"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Nhiệt độ (TextView) -->
+            <TextView
+                android:id="@+id/thursdaytemprature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23°C-30°C"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Layout ngày thứ 6 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#ADD8E6">
+
+        <!-- Thứ 6 (TextView) -->
+        <TextView
+            android:id="@+id/friday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Friday"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- Icon thời tiết (ImageView) -->
+        <ImageView
+            android:id="@+id/ic_mostly_cloudy"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Weather Icon"
+            android:src="@drawable/mostly_cloudy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tình trạng thời tiết (TextView) -->
+            <TextView
+                android:id="@+id/mostlycloudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mostly Cloudy"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Nhiệt độ (TextView) -->
+            <TextView
+                android:id="@+id/fridaytemprature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22°C-30°C"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Layout ngày thứ 7 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#ADD8E6">
+
+        <!-- Thứ 7 (TextView) -->
+        <TextView
+            android:id="@+id/saturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Saturday"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- Icon thời tiết (ImageView) -->
+        <ImageView
+            android:id="@+id/ic_sun"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Weather Icon"
+            android:src="@drawable/sun" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tình trạng thời tiết (TextView) -->
+            <TextView
+                android:id="@+id/sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Nhiệt độ (TextView) -->
+            <TextView
+                android:id="@+id/saturdaytemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27°C-33°C"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Layout ngày Chủ Nhật -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#ADD8E6">
+
+        <!-- Chủ Nhật (TextView) -->
+        <TextView
+            android:id="@+id/sunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Sunday"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- Icon thời tiết (ImageView) -->
+        <ImageView
+            android:id="@+id/ic_thunderstorm"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Weather Icon"
+            android:src="@drawable/thunderstorm" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tình trạng thời tiết (TextView) -->
+            <TextView
+                android:id="@+id/thunderstorm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thunderstorm"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- Nhiệt độ (TextView) -->
+            <TextView
+                android:id="@+id/sundaytemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22°C-27°C"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+

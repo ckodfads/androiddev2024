@@ -1,25 +1,39 @@
 package vn.edu.usth.weather;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.fragment.app.Fragment;
-import android.graphics.Color; // for background colors
-
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class ForecastFragment extends Fragment {
 
-
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate an empty layout
-        View view = inflater.inflate(R.layout.forecast_fragment, container, false);
+        // Inflate the layout for this fragment
+        View v = new View(getContext());
+        v.setBackgroundColor(0x200000FF);
 
-        // Set background color dynamically
-        // You can choose one of the colors (#20FF0000, #2000FF00, or #200000FF)
-        view.setBackgroundColor(Color.parseColor("#20FF0000")); // Red with transparency
+        LinearLayout linearLayout = new LinearLayout(getActivity());
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
+        linearLayout.setBackgroundColor(Color.BLUE);
 
-        return view;
+        TextView dayTextView = new TextView(getActivity());
+        dayTextView.setText("Thursday");
+        dayTextView.setTextSize(20);
+        dayTextView.setTextColor(Color.BLACK);
+
+
+        ImageView weatherIcon = new ImageView(getActivity());
+        weatherIcon.setImageResource(R.drawable.mostly_cloudy);
+
+        linearLayout.addView(dayTextView);
+        linearLayout.addView(weatherIcon);
+
+        return inflater.inflate(R.layout.forecast_fragment, container, false);
     }
 }
-

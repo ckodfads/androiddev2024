@@ -22,6 +22,18 @@
         android:text="Click Me"
         android:layout_marginTop="20dp" />
 
+    <fragment
+        android:id="@+id/fragment_weather"
+        android:name="vn.edu.usth.weather.WeatherFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:id="@+id/forecast_fragment"
+        android:name="vn.edu.usth.weather.ForecastFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <!-- Container để chèn fragment (nếu cần thiết) -->
     <FrameLayout
         android:id="@+id/container"
