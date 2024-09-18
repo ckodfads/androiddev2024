@@ -15,7 +15,7 @@ public class WeatherAndForecastFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_weather_and_forecast, container, false);
+        View view = inflater.inflate(R.layout.fragment_weather_and_forcast, container, false);
 
         FragmentManager fragmentManager = getChildFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();

@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="persianblue">1c2caf</color>
+    <color name="lightblue">#ADD8E6</color>
+    <color name="palelime">#FFCCFF28</color>
+
 </resources>

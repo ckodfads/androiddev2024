@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:text="Monday"
+            android:text="@string/monday"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -80,7 +80,7 @@
                 android:id="@+id/partlycloudy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Partly Cloudy"
+                android:text="@string/partly_cloudy"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
@@ -107,7 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:text="Tuesday"
+            android:text="@string/tuesday"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -132,7 +132,7 @@
                 android:id="@+id/heavyrain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Heavy Rain"
+                android:text="@string/heavy_rain"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
@@ -160,7 +160,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:text="Wednesday"
+            android:text="@string/wednesday"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -185,7 +185,7 @@
                 android:id="@+id/rain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rain"
+                android:text="@string/rain"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
@@ -212,7 +212,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:text="Thursday"
+            android:text="@string/thursday"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -237,7 +237,7 @@
                 android:id="@+id/scatteredshowers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Scattered Showers"
+                android:text="@string/scattered_showers"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
@@ -267,7 +267,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:text="Friday"
+            android:text="@string/friday"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -290,7 +290,7 @@
                 android:id="@+id/mostlycloudy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mostly Cloudy"
+                android:text="@string/mostly_cloudy"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
@@ -319,7 +319,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:text="Saturday"
+            android:text="@string/saturday"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -342,7 +342,7 @@
                 android:id="@+id/sun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sun"
+                android:text="@string/sun"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
@@ -371,7 +371,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:text="Sunday"
+            android:text="@string/sunday"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -394,7 +394,7 @@
                 android:id="@+id/thunderstorm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Thunderstorm"
+                android:text="@string/thunderstorm"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 

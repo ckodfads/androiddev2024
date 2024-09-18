@@ -5,40 +5,23 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Một TextView hiển thị tiêu đề -->
-    <TextView
-        android:id="@+id/text_view"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Tab for custom city"/>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Main Activity"
-        android:textSize="24sp"
-        android:textColor="@android:color/black" />
+        android:contentDescription="ViewPager for swiping between pages" />
 
-    <!-- Một Button để điều hướng hoặc thực hiện hành động nào đó -->
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click Me"
-        android:layout_marginTop="20dp" />
 
-    <fragment
-        android:id="@+id/fragment_weather"
-        android:name="vn.edu.usth.weather.WeatherFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
-    <fragment
-        android:id="@+id/forecast_fragment"
-        android:name="vn.edu.usth.weather.ForecastFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
-    <!-- Container để chèn fragment (nếu cần thiết) -->
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
 
 </LinearLayout>

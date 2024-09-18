@@ -7,7 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
+import androidx.viewpager.widget.ViewPager;
+import vn.edu.usth.weather.HomeFragmentAdapter;
+import com.google.android.material.tabs.TabLayout;
 
 
 public class WeatherActivity extends AppCompatActivity {
@@ -22,27 +24,15 @@ public class WeatherActivity extends AppCompatActivity {
         // Create a new Fragment to be placed in the activity
         WeatherAndForecastFragment weatherAndForecastFragment = new WeatherAndForecastFragment();
 // Add the fragment to the 'container' FrameLayout
-        getSupportFragmentManager().beginTransaction().add(R.id.container, weatherAndForecastFragment).commit();
-        Log.i(TAG,"Create");
+
+        ViewPager viewPager = findViewById(R.id.viewpager);
+        HomeFragmentAdapter adapter = new HomeFragmentAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = findViewById(R.id.tabLayout);
+        tabLayout.setupWithViewPager(viewPager);
+
+
     }
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.i(TAG, "Start");
-    }
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.i(TAG, "Pause");
-    }
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i(TAG, "Resume");
-    }
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.i(TAG, "Destroy");
-    }
+
 }

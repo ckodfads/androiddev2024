@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class HomeFragmentAdapter extends FragmentPagerAdapter {
     private final int PAGE_COUNT = 3;
-    private String[] titles = new String[]{"Hanoi", "Paris", "Toulouse"};
+    private String[] titles = new String[]{"@string/Hanoi", "@string/Paris", "@string/Toulouse"};
 
     public HomeFragmentAdapter(FragmentManager fm) {
         super(fm);
