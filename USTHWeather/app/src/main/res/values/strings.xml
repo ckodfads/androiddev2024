@@ -1,21 +1,21 @@
 <resources>
     <string name="app_name">USTH Weather</string>
-    <string name="cloudy">Nhiều mây</string>
-    <string name="monday">Thứ Hai</string>
-    <string name="tuesday">Thứ Ba</string>
-    <string name="wednesday">Thứ Tư</string>
-    <string name="thursday">Thứ Năm</string>
-    <string name="friday">Thứ Sáu</string>
-    <string name="saturday">Thứ Bảy</string>
-    <string name="sunday">Chủ Nhật</string>
-    <string name="partly_cloudy">Có mây rải rác</string>
-    <string name="heavy_rain">Mưa lớn</string>
-    <string name="rain">Mưa</string>
-    <string name="scattered_showers">Mưa rào rải rác</string>
-    <string name="mostly_cloudy">Hầu hết có mây</string>
-    <string name="sun">Trời nắng</string>
-    <string name="thunderstorm">Mưa dông sấm sét</string>
-    <string name="Hanoi">Hà Nội</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="partly_cloudy">Partly Cloudy</string>
+    <string name="heavy_rain">Heavy Rain</string>
+    <string name="rain">Rain</string>
+    <string name="scattered_showers">Scattered Showers</string>
+    <string name="mostly_cloudy">Mostly Cloudy</string>
+    <string name="sun">Sun</string>
+    <string name="thunderstorm">Thunderstorm</string>
+    <string name="Hanoi">Ha Noi</string>
     <string name="Paris">Paris</string>
     <string name="Toulouse">Toulouse</string>
 
